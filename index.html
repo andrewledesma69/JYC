@@ -942,21 +942,21 @@
                     
                     <div class="contact-col">
                         <div class="contact-form-wrapper">
-                            <form id="contact-form">
-                                <div class="form-group">
-                                    <label class="form-label" for="userName">Full Name</label>
-                                    <input type="text" id="name" class="form-control" placeholder="Juan Dela Cruz" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="userEmail">Email Address</label>
-                                    <input type="email" id="userEmail" class="form-control" placeholder="juandelacruz@gmail.com" required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="userMessage">Your Message / Prayer Request</label>
-                                    <textarea id="userMessage" class="form-control" placeholder="Tell us how we can support or welcome you..." required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                            </form>
+                            <form action="https://formspree.io/f/xzdqajpj" method="POST">
+    <div class="form-group">
+        <label class="form-label" for="name">Full Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Juan Dela Cruz" required>
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="userEmail">Email Address</label>
+        <input type="email" name="email" id="userEmail" class="form-control" placeholder="juandelacruz@gmail.com" required>
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="userMessage">Your Message / Prayer Request</label>
+        <textarea name="message" id="userMessage" class="form-control" placeholder="Tell us how we can support or welcome you..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+</form>
                         </div>
                     </div>
                     
